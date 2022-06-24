@@ -1,0 +1,7 @@
+Tabs or Spaces for files ?!
+	[ Code: *.py ]
+		spaces
+			; vim	(tabstop=2, shiftwidth=2, expandtab)
+	[ UPPERCASE: *.md, *.txt ]
+		tabs
+			; nvim	(tabstop=8, shiftwidth=8)
