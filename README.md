@@ -22,3 +22,22 @@ $ python -V	# Python 3.10.4
 	- [ ] Chats
 	- [ ] Bookmarks
 - [ ] Workspaces	- Widgets
+
+
+#### Project structure
+```
+$ tree -d -I '__pycache__'
+.
+├── applications
+│   └── app
+│       ├── bookmarks
+│       └── chats
+├── auth
+├── root
+├── services
+│   └── service
+│       ├── parsers
+│       └── servers
+└── workspaces
+    └── workspace
+```
