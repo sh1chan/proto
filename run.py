@@ -3,12 +3,14 @@
 
 from flask import Flask
 
+from src.blueprints.root.main import root
 from src.blueprints.applications.main import applications
 
 
 sh1chan = Flask(__name__)
 sh1chan.config.from_object('src.config.DevelopmentConfig')
 
+sh1chan.register_blueprint(root, url_prefix='/')
 sh1chan.register_blueprint(applications, url_prefix='/applications')
 
 
