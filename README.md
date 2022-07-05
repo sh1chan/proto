@@ -21,6 +21,7 @@ $ python -V	# Python 3.10.4
 - [ ] Applications	- Random applications
 	- [ ] Chats
 	- [ ] Bookmarks
+	- [ ] Accounts
 - [ ] Workspaces	- Widgets
 
 
@@ -30,6 +31,7 @@ $ tree -d -I '__pycache__'
 .
 ├── applications
 │   └── app
+│       ├── accounts
 │       ├── bookmarks
 │       └── chats
 ├── auth
