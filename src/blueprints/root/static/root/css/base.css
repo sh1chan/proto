@@ -1,0 +1,16 @@
+.container-bottom {
+  display: flex;
+}
+
+.navbar-top {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-left {
+  margin-right: auto;
+}
+
+.navbar-right {
+  margin-left: auto;
+}

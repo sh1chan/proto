@@ -7,13 +7,53 @@
     {% block head %}
     {% endblock %}
 
+    <link rel="stylesheet" href="{{ url_for('root.static', filename='css/base.css') }}">
     {% block static_links %}
     {% endblock %}
   </head>
 
   <body>
-    {% block body %}
-    {% endblock %}
+    <div class="container-top">
+      <nav class="navbar-top">
+        <ul>
+          <li>navbar-top: 1</li>
+          <li>navbar-top: 2</li>
+          <li>navbar-top: 3</li>
+          <li>navbar-top: 4</li>
+          {% block navbar_top %}
+          {% endblock %}
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container-bottom">
+      <nav class="navbar-left">
+        <ul>
+          <li>navbar-left: 1</li>
+          <li>navbar-left: 2</li>
+          <li>navbar-left: 3</li>
+          <li>navbar-left: 4</li>
+          {% block navbar_left %}
+          {% endblock %}
+        </ul>
+      </nav>
+
+      <div class="container">
+        {% block body %}
+        {% endblock %}
+      </div>
+
+      <nav class="navbar-right">
+        <ul>
+          <li>navbar-right: 1</li>
+          <li>navbar-right: 2</li>
+          <li>navbar-right: 3</li>
+          <li>navbar-right: 4</li>
+          {% block navbar_rigth %}
+          {% endblock %}
+        </ul>
+      </nav>
+    </div>
 
     {% block static_scripts %}
     {% endblock %}
