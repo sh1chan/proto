@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 
 accounts = Blueprint(
@@ -9,4 +9,4 @@ accounts = Blueprint(
 
 @accounts.route('/')
 def index():
-  return '<h1>Accounts</h1>'
+  return render_template('index.html')
