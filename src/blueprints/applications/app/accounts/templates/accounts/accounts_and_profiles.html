@@ -1,5 +1,27 @@
 {% extends "root/base.html" %}
 
+
 {% block body %}
-  <h1>Profiles</h1>
+  <h1>Accounts and Profiles</h1>
+
+  {% if accounts %}
+    <h4>Accounts</h4>
+    <div class="accounts">
+      {% for account in accounts %}
+        <p id="{{ account["id"] }}">{{ account["name"] }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if profiles %}
+    <h4>Profiles</h4>
+    <div class="profiles">
+      {% for profile in profiles %}
+        <a href="{{ url_for('applications.accounts.profile', profile_id=profile['id']) }}">
+          <p id="{{ profile["id"] }}">{{ profile["name"] }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
 {% endblock %}

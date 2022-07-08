@@ -1,7 +1,12 @@
 class Accounts:
+  ACCOUNTS = [
+    {'id': 1, 'name': 'account_1'},
+    {'id': 2, 'name': 'account_2'},
+    {'id': 3, 'name': 'account_3'},
+  ]
 
   def all(self) -> None:
-    pass
+    return self.ACCOUNTS
 
 
 class AccountOptions:

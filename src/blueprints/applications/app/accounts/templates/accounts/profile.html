@@ -1,5 +1,13 @@
 {% extends "root/base.html" %}
 
+
 {% block body %}
-  <h1>Profile</h1>
+  <h1>Profile Accounts</h1>
+
+  <div class="profile-accounts">
+    {% for account in profile["accounts"] %}
+      <p id="{{ account["id"] }}">{{ account["name"] }}</p>
+    {% endfor %}
+  </div>
+
 {% endblock %}
