@@ -24,7 +24,6 @@ $ python -V	# Python 3.10.4
 	- [ ] Accounts
 - [ ] Workspaces	- Widgets
 
-
 #### Project structure
 ```
 $ tree -d -I '__pycache__'
@@ -42,4 +41,9 @@ $ tree -d -I '__pycache__'
 │       └── servers
 └── workspaces
     └── workspace
+```
+
+#### Project vocabulary
+```
+R{request}		- REST request (RGET, RPOST), no html render
 ```
