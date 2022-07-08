@@ -4,7 +4,7 @@ Yep, You can collect your own or others accounts
 
 #### Application routes
 ```
-/	- GET	request (all created profiles)
+/	- GET	request (all accounts and created profiles)
 
 /profile/{profile_id}	- GET	request (created profile by id), 0 is to create a new one
 /profile/{profile_id}	- POST	request (profile_id=0, create a new profile)
