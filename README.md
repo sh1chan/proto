@@ -41,6 +41,7 @@ $ tree -d -I '__pycache__'
 │       └── servers
 └── workspaces
     └── workspace
+        └── web
 ```
 
 #### Project vocabulary
