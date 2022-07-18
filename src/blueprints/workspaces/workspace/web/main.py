@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 
 web = Blueprint(
@@ -8,6 +8,6 @@ web = Blueprint(
 )
 
 
-@web.route('/')
+@web.route('/', methods=['GET'])
 def index():
-  return '<h1>Web</h1>'
+  return render_template('web/index.html')
