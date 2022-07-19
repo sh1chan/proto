@@ -1,11 +1,11 @@
 from flask import Blueprint
 
-from .workspace.web.main import web
+from .workspace.constructor.main import constructor
 
 
 workspaces = Blueprint('workspaces', __name__, static_folder='static')
 
-workspaces.register_blueprint(web, url_prefix='/web')
+workspaces.register_blueprint(constructor, url_prefix='/constructor')
 
 
 @workspaces.route('/')
