@@ -1,5 +1,6 @@
-# sh1chan
-Shinigami Chan (proto projects)
+# sh1chan - Shinigami Chan (proto projects)
+Blueprint `constructor` is the main project, others will be created as a utils
+
 
 #### Dependencies
 ```bash
@@ -23,6 +24,7 @@ $ python -V	# Python 3.10.4
 	- [ ] Bookmarks
 	- [ ] Accounts
 - [ ] Workspaces	- Widgets
+	- [ ] constructor
 
 #### Project structure
 ```
@@ -41,7 +43,7 @@ $ tree -d -I '__pycache__'
 │       └── servers
 └── workspaces
     └── workspace
-        └── web
+        └── constructor
 ```
 
 #### Project vocabulary

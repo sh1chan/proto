@@ -5,6 +5,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# test files
+*-ignore_me*
+
 # C extensions
 *.so
 
