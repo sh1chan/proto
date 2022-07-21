@@ -4,6 +4,9 @@ class Config:
   DEBUG = False
   TESTING = False
 
+  SQLALCHEMY_DATABASE_URI = 'sqlite:///./data/test.db'
+  SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 class ProductionConfig(Config):
   pass
 
