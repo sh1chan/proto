@@ -46,28 +46,42 @@ $ tree -d -I '__pycache__'
 ```
 
 #### SQL Database Structure
-```python3
-class Model:
-	id	= 0
-	name	= 'model_0'
+```
+@Model.table
++----+-----------+
+| id |    name   |
++----+-----------+
+|  1 | Full Name |
++----+-----------+
 
-class Element_*:
-	id		= 0
-	name		= 'element_0'
-	*options	= '\\'
+@ModelElements.table
++----+-----------+------------------------------+
+| id |  model_id | model_elementoption_value_id |
++----+-----------+------------------------------+
+|  1 |     1     |                1             |
++----+-----------+------------------------------+
+|  2 |     1     |                2             |
++----+-----------+------------------------------+
+|  3 |     1     |                3             |
++----+-----------+------------------------------+
 
-class Model_Elements:
-	id			= 0
-	model_id		= 0
-	model_element_id	= 0
+@ElementOption_Value.table
++----+-------------+---------------+
+| id |  element_id | element_value |
++----+-------------+---------------+
+|  1 |     1       |     Tanya     |
++----+-------------+---------------+
+|  2 |     2       |      von      |
++----+-------------+---------------+
+|  3 |     3       |  Degurechaff  |
++----+-------------+---------------+
 
-# Element Example
-class Element_FullName(db.Model):
-	id		= 0
-	name		= 'Full Name'
-	first_name	= 'Tanya'
-	middle_name	= 'von'
-	last_name	= 'Degurechaff'
+@Element_Firstname.table
++----+------------+---------+------+
+| id |    name    | op_view | op_* |
++----+------------+---------+------+
+|  1 | First Name |  input  |  ~!  |
++----+------------+---------+------+
 ```
 
 #### Project vocabulary
