@@ -16,10 +16,9 @@
     <div class="container-top">
       <nav class="navbar-top">
         <ul>
-          <li>navbar-top: 1</li>
-          <li>navbar-top: 2</li>
-          <li>navbar-top: 3</li>
-          <li>navbar-top: 4</li>
+          <li>Current</li>
+          <li>Application</li>
+          <li>Path</li>
           {% block navbar_top %}
           {% endblock %}
         </ul>
@@ -29,10 +28,24 @@
     <div class="container-bottom">
       <nav class="navbar-left">
         <ul>
-          <li>navbar-left: 1</li>
-          <li>navbar-left: 2</li>
-          <li>navbar-left: 3</li>
-          <li>navbar-left: 4</li>
+          <li>
+            <ul><strong>Services</strong>
+              <li>Servers</li>
+              <li>Parsers</li>
+            </ul>
+          </li>
+          <li>
+            <ul><strong>Applications</strong>
+              <li>Chats</li>
+              <li>Bookmarks</li>
+              <li>Accounts</li>
+            </ul>
+          </li>
+          <li>
+            <ul><strong>Workspaces</strong>
+              <li>Constructor</li>
+            </ul>
+          </li>
           {% block navbar_left %}
           {% endblock %}
         </ul>
@@ -45,10 +58,15 @@
 
       <nav class="navbar-right">
         <ul>
-          <li>navbar-right: 1</li>
-          <li>navbar-right: 2</li>
-          <li>navbar-right: 3</li>
-          <li>navbar-right: 4</li>
+          <li>Option: 1</li>
+          <li>Option: 2</li>
+          <li>Option: 3</li>
+          <li>
+            <ul><strong>Inner Options</strong>
+              <li>Option: 1</li>
+              <li>Option: 2</li>
+            </ul>
+          </li>
           {% block navbar_rigth %}
           {% endblock %}
         </ul>

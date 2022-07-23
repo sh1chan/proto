@@ -1,16 +1,45 @@
+body {
+  margin: 0px;
+}
+
+/* ?? */
 .container-bottom {
   display: flex;
 }
 
+
+/* TODO: navbar-* ul */
+.navbar-* ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* SEE: https://love2dev.com/blog/absolute-centering-css/ */
 .navbar-top {
-  text-align: center;
   width: 100%;
+  background-color: cyan;
+  text-align: center;
+}
+
+.navbar-top ul {
+  display: inline-block;
+}
+
+.navbar-top li {
+  float: left;
+}
+
+.navbar-top li + li {
+  margin-left:20px;
 }
 
 .navbar-left {
   margin-right: auto;
+  background-color: pink;
 }
 
 .navbar-right {
   margin-left: auto;
+  background-color: yellow;
 }
