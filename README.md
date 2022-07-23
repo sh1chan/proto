@@ -45,34 +45,6 @@ $ tree -d -I '__pycache__'
         └── constructor
 ```
 
-#### SQL Database Structure
-```
-@Model.table
-+----+-----------+---------+------+
-| id |    name   | op_view | op_* |
-+----+-----------+---------+------+
-|  1 | Full Name |   div   |  ~!  |
-+----+-----------+---------+------+
-
-@Model_Elements.table
-+----+-----------------+---------------------------+
-| id | relation(Model) |    relation(Element_*)    |
-+----+-----------------+---------------------------+
-|  1 |   Model.id(1)   | Element_First_Name.id(1)  |
-+----+-----------------+---------------------------+
-|  2 |   Model.id(1)   | Element_Middle_Name.id(1) |
-+----+-----------------+---------------------------+
-|  3 |   Model.id(1)   |  Element_Last_Name.id(1)  |
-+----+-----------------+---------------------------+
-
-@Element_First_Name.table
-+----+------------+---------+------+
-| id |   Value    | op_view | op_* |
-+----+------------+---------+------+
-|  1 |   Tanya    |  input  |  ~!  |
-+----+------------+---------+------+
-```
-
 #### Project vocabulary
 ```
 R{request}		- REST request (RGET, RPOST), no html render
