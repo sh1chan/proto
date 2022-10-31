@@ -34,5 +34,5 @@ def constructor_group_by_id(group_id: int):
 
 
 @constructor.route('/g/<int:group_id>/<int:constructor_id>', methods=['GET', 'POST'])
-def constructor_by_group_id_and_constructor_id(constructor_group_id: int):
+def constructor_by_group_id_and_constructor_id(group_id: int, constructor_id: int):
   return f"{group_id=}:{constructor_id=}"
