@@ -1,4 +1,4 @@
-# sh1chan - Shinigami Chan (proto projects)
+# Prototype projects for sh1chan
 Blueprint `constructor` is the main project, others will be created as a utils
 
 #### Blueprints
