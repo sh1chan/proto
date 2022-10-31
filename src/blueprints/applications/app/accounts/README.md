@@ -16,3 +16,21 @@ Yep, You can collect your own or others accounts
 /account/{account_id}				- RGET	request (account with options)
 /profile_account/{profile_id}/{account_id}	- RGET	request (profile account with options)
 ```
+
+#### Database Structure (TODO: rename)
+```
+Account	- registered by root
+	- id (pk)
+	- ico (picture)
+	- name (account name)
+
+AccountOptions	- registered by root
+	- id (pk)
+	- account_id (parent)
+	- title
+	#	next version: options_id (parent)
+
+ProfileAccounts	- registered by user
+	- id (pk)
+	- account_options_id
+```
